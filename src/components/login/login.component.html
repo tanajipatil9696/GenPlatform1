@@ -1,0 +1,12 @@
+<!-- login.component.html -->
+
+<div class="container">
+    <form class="login-form">
+      <h2>Login</h2>
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+      <input type="text"  name="username" placeholder="Username" required>
+      <input type="password"  name="password" placeholder="Password" required>
+      <button type="submit" (click)="onNavigateToProducts()">Login</button>
+    </form>
+  </div>
+  
