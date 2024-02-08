@@ -12,12 +12,12 @@ export class ProductService {
 
   getProducts(): Observable<any> {
     // Replace 'http://example.com/api/data' with your backend API endpoint
-    return this.http.get<any>('http://localhost:3000/products/getproducts');
+    return this.http.get<any>('https://gensolutions3.onrender.com/products/getproducts');
   }
 
   addProduct(data: any): Observable<any> {
     // Replace 'http://example.com/api/data' with your backend API endpoint
-    return this.http.post<any>('http://localhost:3000/products/addproduct', data);
+    return this.http.post<any>('https://gensolutions3.onrender.com/products/addproduct', data);
   }
 
 }
