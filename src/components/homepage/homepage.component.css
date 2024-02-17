@@ -1,0 +1,22 @@
+.corousel-img{
+    height: 90vh;
+}
+.container{
+    height: 300px;
+}
+.features{
+    display: flex;
+    
+}
+.featureImg{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: grey;
+    margin: 10px 50px 10px 50px;
+}
+
+.corouseltxt{
+    color:#000000
+}
+

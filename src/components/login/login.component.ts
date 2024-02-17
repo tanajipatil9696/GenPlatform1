@@ -18,7 +18,7 @@ export class LoginComponent {
     // Perform form submission logic here
     console.log("onSubmit=============")
     // Navigate to the desired route after form submission
-    this.router.navigate(['product']); // Use navigateByUrl for navigating to a specific URL
+    this.router.navigate(['homepage']); // Use navigateByUrl for navigating to a specific URL
     // Or use this.router.navigate(['/other-route']); // Use navigate for navigating to a route defined in your Angular routing configuration
   }
   
