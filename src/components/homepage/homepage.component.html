@@ -1,0 +1,45 @@
+<app-homenav *ngIf="!isLoggedIn"></app-homenav>
+<app-navbar *ngIf="isLoggedIn"></app-navbar>
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../../assets/viewBlogBg.jpg" class="d-block w-100  corousel-img" alt="first slide">
+              <div class="carousel-caption d-none d-md-block corouseltxt">
+                <h5><b>Explore Inspiring Blogs</b></h5>
+                <p>Dive into a world of captivating narratives, insightful articles, and thought-provoking content. Discover a diverse range of topics, from travel adventures to tech innovations, curated by passionate bloggers from around the globe. Immerse yourself in the joy of reading and uncover new perspectives with every click.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../../assets/writeBlogBg.jpg" class="d-block w-100  corousel-img" alt="second slide">
+              <div class="carousel-caption d-none d-md-block corouseltxt">
+                <h5><b>Share Your Voice, Share Your Story</b></h5>
+                <p>Elevate your voice and unleash your creativity by becoming a contributor to our vibrant blogging community. Whether you're a seasoned wordsmith or a budding writer, this is your platform to express yourself and share your unique experiences, passions, and expertise with the world. Start crafting your own stories and join us in shaping the narrative of tomorrow.</p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img src="../../assets/community.jpg" class="d-block w-100  corousel-img" alt="third slide">
+              <div class="carousel-caption d-none d-md-block corouseltxt">
+                <h5><b>Join millions of others</b></h5>
+                <p>Whether sharing your expertise, breaking news, or whatever’s on your mind, you’re in good company on Blogger. Sign up to discover why millions of people have published their passions here.</p>
+              </div>
+            </div>
+          </div>
+   
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
