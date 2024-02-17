@@ -1,0 +1,67 @@
+/* top-navbar.component.css */
+
+/* Center the brand icon vertically */
+.mat-toolbar-row span {
+    display: flex;
+    align-items: center;
+    padding:0 70px
+
+  }
+  
+  /* Fill remaining space in the toolbar */
+  .fill-remaining-space {
+    flex: 1 1 auto;
+  }
+  
+  /* Adjust the appearance of tabs */
+  .mat-tab-group {
+    margin-right: 20px; /* Adjust spacing between tabs and the edge of the toolbar */
+  }
+  
+  .mat-tab-label {
+    min-width: 80px; /* Adjust the minimum width of each tab */
+    justify-content: center; /* Center the text inside the tab */
+    font-size: 14px; /* Adjust font size */
+  }
+  
+  .mat-tab-label-content {
+    display: flex;
+    align-items: center; /* Center the text vertically */
+  }
+  
+  /* Custom styling for the toolbar */
+  .mat-toolbar {
+    background-color: #f1f1f1;/* Set background color */
+    color: #ffffff; /* Set text color */
+    font-family: 'Roboto', sans-serif; /* Set font family */
+  }
+  
+  /* Style for the brand icon */
+  .brand-icon {
+    margin-right: 10px; /* Add some space between the icon and text */
+  }
+  
+  /* Style for active tab */
+  .mat-tab-label-active {
+    color: #ffffff; /* Set text color for active tab */
+    background-color: #1565c0; /* Set background color for active tab */
+    border-radius: 4px; /* Add some border radius to the active tab */
+  }
+  
+  /* Style for hover effect on tabs */
+  .mat-tab-label:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Add a subtle hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+  .logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px
+  }
+
+  .tab-with-image {
+    background-image: url('../../assets/avatar.jpg') !important;  
+    background-size: cover !important;
+    background-position: center !important;
+  }

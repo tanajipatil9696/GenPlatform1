@@ -2,7 +2,6 @@
 
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -15,22 +14,12 @@ export class LoginComponent {
 
   constructor(private router: Router) {}
 
-  onSubmit(event: Event) {
-
-    event.preventDefault(); 
-    if (!this.username || !this.password) {
-      this.errorMessage = 'Please enter both username and password.';
-      return;
-    }
-    this.router.navigate(['/product']);
-    // Here, you can implement authentication logic, such as calling an authentication service
-    // For demonstration purposes, let's simulate a successful login after a brief delay
+  onSubmit(): void {
+    // Perform form submission logic here
+    console.log("onSubmit=============")
+    // Navigate to the desired route after form submission
+    this.router.navigate(['product']); // Use navigateByUrl for navigating to a specific URL
+    // Or use this.router.navigate(['/other-route']); // Use navigate for navigating to a route defined in your Angular routing configuration
+  }
   
-  }
-
-  onNavigateToProducts() {
-    // Navigate to the 'products' route upon button click
-    this.router.navigate(['/product']);
-  }
-
 }

@@ -1,0 +1,8 @@
+.blog-card{
+    flex: 0 0 calc(25% - 30px);
+    margin:10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap; 
+}

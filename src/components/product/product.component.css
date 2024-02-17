@@ -1,0 +1,7 @@
+
+.container {
+    background-image: url('../../assets/dashboard1.png'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 100vh;
+  }

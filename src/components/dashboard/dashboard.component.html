@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+    <div class="container">
+    <div class="card blog-card" style="width: 18rem;" *ngFor = "let blog of blogs">
+        <img src="../../assets/{{blog.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{blog.title}}</h5>
+          <p class="card-text">{{blog.desc}}</p>
+          <p class="card-text">Auther : {{blog.blogger}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        
+      </div>
+
+    
+    </div>

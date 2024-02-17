@@ -1,12 +1,46 @@
 <!-- login.component.html -->
 
-<div class="container">
+<!-- <div class="container">
     <form class="login-form">
-      <h2>Login</h2>
+      <img class="logo" src="../../assets/app-logo.png">
       <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
-      <input type="text"  name="username" placeholder="Username" required>
+      <div>
+        <lable for = "email" >
+          <span>Email Address</span>
+        </lable>
+        <input type="text" class ="form-control" name="email" required>
+      </div>
       <input type="password"  name="password" placeholder="Password" required>
       <button type="submit" (click)="onNavigateToProducts()">Login</button>
     </form>
+  </div> -->
+
+<body>
+  <div class="login-container">
+    <div class="log-container"><img class="logo" src="../../assets/app-logo.png"></div>
+    <form id="login-form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group rememberMe">
+        <span><input type="checkbox" id="remember-me" name="remember-me"></span>
+        <span><label for="remember-me">Remember Me</label></span>
+      </div>
+      <div class="google-login">
+        <button type="submit" id="google-login-btn" routerLink="/dashboard">Login</button>
+      </div>
+    </form>
+    <div class="newAccount"><span>Don't have account?</span><span><a href="/sign-up">Create New Account</a></span></div>
+    <div class="newAccount">Sign In Using</div>
+    <div class="signInOptions"><span><img class="google-img" src="../../assets/fb.png"></span><span><img class="google-img" src="../../assets/google-logo.png"></span></div>
+    
+    
+
   </div>
-  
+ 
+</body>
